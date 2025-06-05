@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (ctx) => PlantoesProvider()),
       ],
       child: MaterialApp(
-        title: 'Plantões da Carolzinha :)',
+        title: 'Plantões da Carolzinha 1:)',
         theme: ThemeData(
           primarySwatch: Colors.teal, // Cor principal suave
           visualDensity: VisualDensity.adaptivePlatformDensity,
