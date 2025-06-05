@@ -455,7 +455,7 @@ class _CadastroPlantaoScreenState extends State<CadastroPlantaoScreen> {
         id: widget.plantaoParaEditar?.id,
         localTrabalhoId: _localSelecionado!.id,
         valor: _valor,
-        dataPagamento: _dataPagamento,
+        dataPagamento: _dataPagamento!,
         pago: _pago,
         dataHoraInicio: _dataHoraInicio,
         dataHoraFim: _dataHoraFim,

@@ -40,8 +40,8 @@ class PlantoesProvider with ChangeNotifier {
   Future<void> adicionarOuEditarPlantao({
     String? id,
     required String localTrabalhoId,
-    required double valorPago,
-    required DateTime data, // <--- ANTES: dataPagamento
+    required double valor,
+    required DateTime dataPagamento,
     required bool pago,
     required DateTime dataHoraInicio,
     required DateTime dataHoraFim,
@@ -50,8 +50,8 @@ class PlantoesProvider with ChangeNotifier {
     final novoPlantao = Plantao(
       id: id ?? _uuid.v4(),
       localTrabalhoId: localTrabalhoId,
-      valor: valorPago, // <--- ANTES: valor
-      dataPagamento: data, // <--- ANTES: dataPagamento
+      valor: valor,
+      dataPagamento: dataPagamento,
       pago: pago,
       dataHoraInicio: dataHoraInicio,
       dataHoraFim: dataHoraFim,
